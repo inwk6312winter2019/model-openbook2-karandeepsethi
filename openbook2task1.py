@@ -24,8 +24,22 @@ def unique_owners(data):
 		owners.append(i[11])
 	return owners
 
+def street_classes(data):
+        street=[]
+        for i in data:
+                if i[10] not in street_classes:
+                        street_classes(i[10])=i[2]
+
+                else:
+                        street_classes(i[10]).join(data[2])
+
+        return street_classes
+
+
+
 
 
 d=open("Street_Centrelines.csv")
-print(maintainence_hist(d)
-print(unique_owners(d)
+print(maintainence_hist(d))
+print(unique_owners(d))
+print(street_classes(d))
