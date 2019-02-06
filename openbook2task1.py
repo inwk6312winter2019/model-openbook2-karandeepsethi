@@ -7,3 +7,17 @@ def street_info():
 		tuple.append((line[2],line[4],line[7],line[8]))
 
 print(street_info())
+
+
+def maintainence_histo(d):
+	dictionary={}
+	for i in d:
+		if i not in dictionary:
+			dictionary(i[12])=0
+		else:
+			dictionary(i[12]) +=1
+	return dictionary
+
+d=open("Street_Centrelines.csv")
+print(maintainence_hist(d)
+
