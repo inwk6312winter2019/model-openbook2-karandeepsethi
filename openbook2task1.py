@@ -18,6 +18,14 @@ def maintainence_histo(d):
 			dictionary(i[12]) +=1
 	return dictionary
 
+def unique_owners(data):
+	owners=[]
+	for i in data:
+		owners.append(i[11])
+	return owners
+
+
+
 d=open("Street_Centrelines.csv")
 print(maintainence_hist(d)
-
+print(unique_owners(d)
